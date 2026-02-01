@@ -1,0 +1,95 @@
+.feedback-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 999;
+}
+
+.feedback-btn:hover {
+  background: #4338ca;
+}
+
+/* Overlay */
+.feedback-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal */
+.feedback-modal {
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
+  animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.feedback-modal h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.feedback-modal input,
+.feedback-modal textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.feedback-modal textarea {
+  resize: none;
+  height: 90px;
+}
+
+.feedback-modal button {
+  width: 100%;
+  padding: 10px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.feedback-modal button:hover {
+  background: #4338ca;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  cursor: pointer;
+  font-size: 18px;
+}

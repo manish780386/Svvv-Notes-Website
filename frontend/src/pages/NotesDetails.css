@@ -1,0 +1,91 @@
+/*  Page Wrapper */
+.details-wrapper {
+  padding: 40px;
+  min-height: 100vh;
+  background: #f8fbff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/*  Back Button */
+.back-btn {
+  background: none;
+  border: none;
+  color: #0d47a1;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/*  Header */
+.details-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.details-header h1 {
+  font-size: 36px;
+  color: #0d47a1;
+  margin-bottom: 8px;
+}
+
+.details-header p {
+  color: #555;
+  font-size: 16px;
+}
+
+/*  Cards Layout */
+.details-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/*  Card */
+.details-card {
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(25, 118, 210, 0.35);
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.details-card h2 {
+  margin-bottom: 15px;
+}
+
+.details-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/*  Button */
+.action-btn {
+  background: #fff;
+  color: #0d47a1;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  background: #e3f2fd;
+  transform: scale(1.05);
+}
+
+/*  Hover Effect */
+.details-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(13, 71, 161, 0.45);
+}
