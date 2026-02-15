@@ -89,6 +89,11 @@ import DLCD from './Subjects/DLCD subject/DLCD.jsx'
 
 import DLCDnotes from './Subjects/DLCD subject/DLCDnotes.jsx'
 
+import IntroductiontoDataScience from './Subjects/Introduction to Data Science/IntroductiontoDataScience.jsx'
+import IntroductiontoCloudComputing from './Subjects/Introduction to Cloud Computing/IntroductiontoCloudComputing.jsx'  
+import ComplierDesign from './Subjects/Complier Design/ComplierDesign.jsx'
+import ObjectOrientendAnalysisandDesign from './Subjects/Object Orientend Analysis and Design/ObjectOrientendAnalysisandDesign.jsx'
+import InternetofThings from './Subjects/Internet of Things/IOT.jsx'
 
 
 import IDT from './Subjects/IDT subject/IDT.jsx'
@@ -215,6 +220,12 @@ export default function App() {
 
           <Route path='/notes/sepm' element={<SEPM />} />
           <Route path='/notes/sepm/notes' element={<SEPMnotes />} />
+
+          <Route path='/notes/introduction to data science' element={<IntroductiontoDataScience />} />
+          <Route path='/notes/introduction to cloud computing' element={<IntroductiontoCloudComputing />} />
+          <Route path='/notes/complier design' element={<ComplierDesign />} />
+          <Route path='/notes/object orientend analysis and design' element={<ObjectOrientendAnalysisandDesign />} />
+          <Route path='/notes/internet of things' element={<InternetofThings />} />
 
         
         </Routes>

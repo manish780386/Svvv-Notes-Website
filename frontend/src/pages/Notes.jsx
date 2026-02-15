@@ -6,15 +6,15 @@ import FeedbackForm from "../components/FeedbackForm";
 
 const SUBJECTS_LIST = [
   
-  "Introduction to Data Science",
-  "Introduction to Cloud Computing",
-  "Complier Design",
-  "Object Orientend Analysis and Design",
-  " Internet of Things",
+  
  
   "Theory Of Computation",
   "Introduction to Artificial Intelligence","Mathematics-2","Network Security and Cryptography","Concept of System Security","Discreate Structure",
-  "Data Structures and Algorithms","Computer Network","Operating System","Data Communication","Computer System Organization",
+  "Data Structures and Algorithms","Introduction to Data Science",
+  "Introduction to Cloud Computing",
+  "Complier Design",
+  "Object Orientend Analysis and Design",
+  "Internet of Things","Computer Network","Operating System","Data Communication","Computer System Organization",
   "Analysis and Design Algorithms","Database Management System","EMS","Environmental Science","DLCD","IDT","Object Oriented Programming","SEPM",
   "Introduction to core Java","Mathematics-1","Physics","Chemistry","Cyber law ,ethics and social media Analysis","Communication Skills","Cloud Computing","Fundamental of Information Security","ICSE","Data Science",
 ];
