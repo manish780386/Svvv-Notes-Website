@@ -55,9 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS = [
-    "https://svvv-notes-website-poij.vercel.app/",
-]
+CORS_ALLOW_ALL_ORIGINS = True
 ROOT_URLCONF = 'fullbackend.urls'
 
 TEMPLATES = [
