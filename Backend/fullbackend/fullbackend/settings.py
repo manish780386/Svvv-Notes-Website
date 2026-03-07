@@ -79,11 +79,15 @@ WSGI_APPLICATION = 'fullbackend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+import os
 import dj_database_url
 
 DATABASES = {
-    'default': dj_database_url.parse(
-        "postgresql://django_user:tJh4Ljh5rPnabOrmQYryLBNZ9cLN566W@dpg-d6m4a4fkijhs73fpkh2g-a/django_db_zwyt"
+    "default": dj_database_url.parse(
+        os.environ.get(
+            "DATABASE_URL",
+            "postgresql://django_user:tJh4Ljh5rPnabOrmQYryLBNZ9cLN566W@dpg-d6m4a4fkijhs73fpkh2g-a:5432/django_db_zwyt"
+        )
     )
 }
 
