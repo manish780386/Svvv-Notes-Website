@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9ferktlk*5%4l2b2whl@r-emkcuruo28+bk*a#3(%460yksi$$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://svvv-notes-website-com.onrender.com/"]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Application definition
@@ -55,7 +55,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = [
+    "https://svvv-notes-website-poij.vercel.app/",
+]
 ROOT_URLCONF = 'fullbackend.urls'
 
 TEMPLATES = [

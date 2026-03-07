@@ -17,11 +17,13 @@ export default function FeedbackForm() {
     });
   };
 
+  const API = import.meta.env.VITE_API_URL;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/feedback/", {
+      const res = await fetch(`${API}/api/feedback/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
