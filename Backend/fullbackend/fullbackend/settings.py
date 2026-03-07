@@ -84,7 +84,7 @@ import os
 
 DATABASES = {
     "default": dj_database_url.parse(
-        "postgresql://django_user:tJh4Ljh5rPnabOrmQYryLBNZ9cLN566W@dpg-d6m4a4fkijhs73fpkh2g-a.singapore-postgres.render.com/django_db_zwyt"
+        "postgresql://django_user:tJh4Ljh5rPnabOrmQYryLBNZ9cLN566W@dpg-d6m4a4fkijhs73fpkh2g-a/django_db_zwyt"
     )
 }
 
