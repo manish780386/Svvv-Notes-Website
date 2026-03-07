@@ -14,13 +14,13 @@ export default function Query() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const API = import.meta.env.VITE_API_URL;
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`${API}/api/query/`, {
+      const res = await fetch(`https://svvv-notes-website-com.onrender.com/api/query/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

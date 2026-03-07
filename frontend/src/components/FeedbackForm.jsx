@@ -17,13 +17,13 @@ export default function FeedbackForm() {
     });
   };
 
-  const API = import.meta.env.VITE_API_URL;
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`${API}/api/feedback/`, {
+      const res = await fetch(`https://svvv-notes-website-com.onrender.com/api/feedback/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
